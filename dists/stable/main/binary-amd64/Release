@@ -1,0 +1,5 @@
+Component: main
+Origin: LibertAI
+Label: LibertAI
+Architecture: amd64
+Description: LibertAI CLI packages

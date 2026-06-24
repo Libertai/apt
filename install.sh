@@ -4,8 +4,9 @@ set -eu
 # LibertAI CLI - Debian / Ubuntu bootstrap.
 # Usage: curl -fsSL https://apt.libertai.io/install.sh | sudo sh
 #
-# This installs the latest GitHub Release .deb directly while the signed APT
-# repository is being wired up.
+# This intentionally installs the latest GitHub Release .deb directly. The
+# signed APT repository can replace this script once apt.libertai.io has a
+# valid Pages certificate, GPG key, and package index.
 
 REPO="Libertai/libertai-cli"
 API_URL="https://api.github.com/repos/${REPO}/releases/latest"
@@ -32,8 +33,8 @@ case "$(uname -m)" in
     *) err "only amd64 Debian/Ubuntu packages are published today. Use the universal installer or build from source." ;;
 esac
 
-tmp_json="$(mktemp)"
-tmp_deb="$(mktemp)"
+tmp_json="$(mktemp -t libertaiXXXXXX.json)"
+tmp_deb="$(mktemp -t libertaiXXXXXX.deb)"
 trap 'rm -f "$tmp_json" "$tmp_deb"' EXIT
 
 printf 'Resolving latest LibertAI CLI release...\n'

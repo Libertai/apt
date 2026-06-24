@@ -1,0 +1,7 @@
+Origin: LibertAI
+Label: LibertAI
+Codename: stable
+Architectures: amd64
+Components: main
+Description: LibertAI CLI packages
+SignWith: yes
