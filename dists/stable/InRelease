@@ -1,29 +1,29 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
 Origin: LibertAI
 Label: LibertAI
 Codename: stable
-Date: Wed, 24 Jun 2026 14:46:07 UTC
+Date: Wed, 24 Jun 2026 19:18:58 UTC
 Architectures: amd64
 Components: main
 Description: LibertAI CLI packages
 MD5Sum:
- 35057e94ff569c4d1eef31f340d16a1f 21719 main/binary-amd64/Packages
- 0a60cb6e88f1258ff8b18fa190cea4dd 8898 main/binary-amd64/Packages.gz
+ 476a20a437c18915420ca40fecc8b04b 17097 main/binary-amd64/Packages
+ 78a603ea2dcb3b3ad2b0909b45bc4de9 6985 main/binary-amd64/Packages.gz
  b9ef2eb67992bd0d381d5e82a6da67b4 104 main/binary-amd64/Release
 SHA1:
- 8a3fba9d6b0959af4ff0a11d0b2c9b9da7a8379b 21719 main/binary-amd64/Packages
- 2a56acdc9cd8f6592fc661a2202062dadb4af68f 8898 main/binary-amd64/Packages.gz
+ 1d5801a19f53503b58d503ecb5a7558c778ef794 17097 main/binary-amd64/Packages
+ 87a90f507e64146c19ac91c829c2557778bdeefb 6985 main/binary-amd64/Packages.gz
  c5e5321dbdcdb910310a77174a9616d889cf9386 104 main/binary-amd64/Release
 SHA256:
- 1efecd4b657d43a1b69faee1e1aebf11c0b7d7cf70cb584b5722c9425d5ad621 21719 main/binary-amd64/Packages
- 2968a5a0e5a8f55245d29289d06802344e42723c0b345e0d9df30c5fc9554221 8898 main/binary-amd64/Packages.gz
+ 3287be5dec42d02ba004ebbdc6e0063625d7a6e8a143073a69f6fd8948b85754 17097 main/binary-amd64/Packages
+ dff59d80077078754ebb32b3f78df0844132cf45e6f170799000343c8d60d04e 6985 main/binary-amd64/Packages.gz
  d1e5767465a49445d56cae983a09abf6ffae97bf2b05b4310bb9a960831bd8ec 104 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQT6sofPljbUveyOY48o+6Ytni22pwUCajvtrwAKCRAo+6Ytni22
-p6oUAQDsjTGsRdrJaq7sT9kl7Y4fP3xWbWENn9mOvLAPTis3oAEAtRrZ9VOIBOG2
-4qzl/egVPZsc+SAakaB4OQ7pknbgggk=
-=QFXv
+iHUEARYIAB0WIQT6sofPljbUveyOY48o+6Ytni22pwUCajwtogAKCRAo+6Ytni22
+p56fAQCfC/cinLXn5tavmQFfNt5ZTnRma4ZQkr51FchFHfOXsQEAgH28Truc62cd
+XAzt2rkhriqu+AM3OfeuikI2sfOoLws=
+=RUuB
 -----END PGP SIGNATURE-----
