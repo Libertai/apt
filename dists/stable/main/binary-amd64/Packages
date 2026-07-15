@@ -1,17 +1,17 @@
 Package: libertai-cli
-Version: 0.4.1-1
+Version: 0.4.2-1
 Architecture: amd64
 Homepage: https://libertai.io
 Maintainer: LibertAI <contact@libertai.io>
-Installed-Size: 39778
+Installed-Size: 39447
 Depends: libc6 (>= 2.35)
 Priority: optional
 Section: utils
-Filename: pool/main/libe/libertai-cli/libertai-cli_0.4.1-1_amd64.deb
-Size: 10431560
-SHA256: 5b0efb560b9503b38c9f0120db64eb447c40354b2b8de8c7ae35144be3df69f0
-SHA1: 9073a8a622c8af6a99020f031b246aabe887c544
-MD5sum: b738f34eeaf2ee9701ac0547943e64ba
+Filename: pool/main/libe/libertai-cli/libertai-cli_0.4.2-1_amd64.deb
+Size: 10254516
+SHA256: 54c3b00f74075ccd3a64b0f91c583332fb840227fffe828ca424e5a1a2711cb7
+SHA1: f8b3495ea59f10eed76efd4d40ec85c91952c1cb
+MD5sum: da6455976ea0f90d569cce517c217db6
 Description: Command-line tool for LibertAI: inference, image generation, and launching
  agent tools (Claude Code, OpenCode, Aider) with LibertAI as the backend.
  # libertai
