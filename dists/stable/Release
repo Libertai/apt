@@ -1,19 +1,19 @@
 Origin: LibertAI
 Label: LibertAI
 Codename: stable
-Date: Tue, 13 Oct 2026 06:12:50 UTC
+Date: Fri, 30 Oct 2026 02:22:19 UTC
 Architectures: amd64
 Components: main
 Description: LibertAI CLI packages
 MD5Sum:
- d330c93c577a4922abeedadea5c9a366 37846 main/binary-amd64/Packages
- 629eed30c0afbf0c549e560840540088 15118 main/binary-amd64/Packages.gz
+ b50825c836cb92fcbc8f67681f392a40 37846 main/binary-amd64/Packages
+ 6aa6bd8f9d78caccc04e64950e003a3f 15118 main/binary-amd64/Packages.gz
  b9ef2eb67992bd0d381d5e82a6da67b4 104 main/binary-amd64/Release
 SHA1:
- 1da13883fca8806d48c971ce3749eaa0b1276b82 37846 main/binary-amd64/Packages
- 7d4b411233801b96260a11c3122c0f27ae4bec56 15118 main/binary-amd64/Packages.gz
+ 69910cfcee56ec420f74b82c0c7a20110d62e0bb 37846 main/binary-amd64/Packages
+ 0faabb7bfb2015f571111ee04a329db4d6976a66 15118 main/binary-amd64/Packages.gz
  c5e5321dbdcdb910310a77174a9616d889cf9386 104 main/binary-amd64/Release
 SHA256:
- d7e9bc374d9a260b0ab98786ffdf1c5d07b017b7580300ee23fde67eaf710616 37846 main/binary-amd64/Packages
- 7f4fa87098131e793940f140c6035d62d6d12ca223d655a4157a0e24e1cbb041 15118 main/binary-amd64/Packages.gz
+ e69e1e2b024baf536e67e8edcb924ccf50e382e85fe80674171edb11c9f9afd6 37846 main/binary-amd64/Packages
+ 690ac7b652e7d8387d1c588350acd8f414ab3df8460024f956646704e9f3a50e 15118 main/binary-amd64/Packages.gz
  d1e5767465a49445d56cae983a09abf6ffae97bf2b05b4310bb9a960831bd8ec 104 main/binary-amd64/Release
