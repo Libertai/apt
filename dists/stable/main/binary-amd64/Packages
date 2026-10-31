@@ -1,17 +1,17 @@
 Package: libertai-cli
-Version: 0.6.1-1
+Version: 0.6.2-1
 Architecture: amd64
 Homepage: https://libertai.io
 Maintainer: LibertAI <contact@libertai.io>
-Installed-Size: 44980
+Installed-Size: 44932
 Depends: libc6 (>= 2.34), libssl3 (>= 3.0.0~~alpha1)
 Priority: optional
 Section: utils
-Filename: pool/main/libe/libertai-cli/libertai-cli_0.6.1-1_amd64.deb
-Size: 12666080
-SHA256: 2b9f375c643c20385903195d0f0ffb5b2c46051bde4c1ed60fe3dc93f2fec12d
-SHA1: dff889f9cb723747efa775bc93dbff4f9e270b93
-MD5sum: 58bcaab9a514df1a654ab9095786e62b
+Filename: pool/main/libe/libertai-cli/libertai-cli_0.6.2-1_amd64.deb
+Size: 12648232
+SHA256: ab8bd1b71ed3042a4334849dc9181143ef61e8048119bf3370b46ea6de082088
+SHA1: fef34b5180d218965f0e1c785d00c5365bf49679
+MD5sum: 4f1cd01bf18e71ca48fc5c431d56b372
 Description: Command-line tool for LibertAI: inference, image generation, and launching
  agent tools (Claude Code, OpenCode, Aider) with LibertAI as the backend.
  # libertai
@@ -288,8 +288,7 @@ Description: Command-line tool for LibertAI: inference, image generation, and la
  not just LibertAI's — if you have other providers configured, they appear
  there too, and picking one routes that session to that provider rather than
  to LibertAI. Switching model mid-session goes through ACP's
- `session/set_model`. Run `libertai models --refresh` to pull new LibertAI
- models into the registry so they show up in the picker.
+ `session/set_model`.
  .
  ACP sessions are held in memory and are not written to pi's session store, so
  they do not appear in `libertai code --list-sessions` and cannot be resumed
@@ -494,9 +493,8 @@ Description: Command-line tool for LibertAI: inference, image generation, and la
  | `libertai status` | Current auth state and default models. `--json`. |
  | `libertai usage` | Plan tier, rolling allowance windows (5h + weekly), and
  prepaid credits. `--json`. |
- | `libertai models` | List models from `/v1/models`. `--json`; `--refresh`
- re-syncs the persisted catalog so new models become selectable in `libertai
- code`'s `/model`. |
+ | `libertai models` | List models from `/v1/models` with context window and
+ price. `--json`. |
  | `libertai keys list\|create\|delete` | Manage your account's API keys. `list
  --json`. |
  | `libertai ask <prompt>` | One-shot, non-streaming completion. `--model`,
@@ -529,14 +527,9 @@ Description: Command-line tool for LibertAI: inference, image generation, and la
    `agents`, `sandbox info`, `code --list-sessions`, and `import claude-code
    list` / `show` emit machine-readable JSON. JSON is the *only* thing
    written to stdout; progress notes and human extras go to stderr.
- - **`models --json`** — keeps the `/v1/models` wire fields (`id`,
-   `owned_by`) and, when LibertAI's public model catalog is reachable
-   (fetched from an Aleph aggregate, cached on disk for 24h), adds a
-   `catalog` object per text model: `name`, `hfId`, `contextWindow`,
-   `vision`, `reasoning`, `tee`, `functionCalling`, `inputUsdPerMtok`,
-   `outputUsdPerMtok`. For alias/deprecated/`-thinking` ids the metadata
-   comes from the base entry and `resolvedId` replaces `name`/`hfId`.
-   Offline, the `catalog` key is simply absent.
+ - **`models --json`** — the `/v1/models` listing as returned, including
+   its metadata fields (`name`, `context_length`, `architecture`,
+   `pricing`, `supported_parameters`; OpenRouter's schema).
  - **Styling** — ANSI colors are emitted only when the destination stream is
    a terminal; piped output is plain text. `NO_COLOR` (per
    [no-color.org](https://no-color.org)) and `TERM=dumb` disable styling
